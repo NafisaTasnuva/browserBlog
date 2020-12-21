@@ -1,18 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="css/index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafisa Tasnuva Portfolio</title>
+
+    <!-- Bootstrap css file-->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+
+    <!-- font awesome icons-->
+    <link rel="stylesheet"
+ href="./CSS/all.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Responsive css file -->
+    <link rel="stylesheet" href="./CSS/responsive.css"
+</head>
+</head>
+
+<body>
+
+ <!-- ====================== Start Header Area =======================-->
+ <header class="header_area">
+     <div class="main-menu">
+       <a href="#" aria-label="nav-bar"></a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./img/nafisa-logo.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about-area">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#my-angle">My angle</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact-me">Contact</a>
+                  </li>
+                  
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+     </div>
+ </header>
+ <!-- ======================  End Header Area =======================-->
+
+
+ <!-- ====================== Start Main Area =========================-->
+<main class="site-main">
+    <!-- ==================== Start Banner Area =======================-->
+    <section class="site-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 site-title">
+                    <h1 class="title-text">Hello!</h1>
+                    <h2 class="title-text text-uppercase">I'm Nafisa Tasnuva</h2>
+                    <h3 class="title-text text-uppercase">UX designer</h3>
+                </div>
+                <div class="col-lg-6 col-md-12 banner-image-girl">
+                    <img src="./img/banner/banner-image-girl.PNG" alt="banner-img" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </section>
+     <!-- ==================== End Banner Area =======================-->
+      <!-- =================== About Area =============================-->
+      
+<section class="about-area">
+  <div class="container-fluid" id="about-area">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+       <div class="about-img">
+      <img src="./img/about-us1.png" alt="about me" class="img-fluid">
+    </div>
+  </div>
+      <div class="col-lg-6 col-md-12 about-title">
+        <h2 class="text-uppercase pt-5">
+          <span>Let me</span>
+          <span>introduce</span>
+          <span>myself</span>
+        </h2>
+        <div class=".paragraph.py-4.w-75">
+          <p class="para">
+            My name is Nafisa Tasnuva and I am a second year user experience design student studying at Wilfrid Laurier University. 
+            I really enjoy doing art in all forms and mediums, as I'm a very explorative individual. My favourite thing to do is keep learning new things, whether it be a new language, craft or technique. 
+          </p>
+          <p class="para">
+            My skills are graphics design, user interface design and mainly visual designs. I am a self-taught artist with more than 10
+            years of experience. I am also a freelance artist that does illustrations and animations. I do enjoy problem-solving, team-work and challenges that makes me explore different perspectives.
+
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+      <!-- =================== End About Area =============================-->
+
+
+
+      <!--==================== My angle and projects area==================-->
+        <head>
+          <div class="my-angle" id="my-angle" ></div>
+      <title>Slider</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header></header>
-    <nav></nav>
-    <article id="current" class="container"></article>
-    <article id="items" class="container">
-        <section id="itemsInner"></section>
-        <div class="moreleft">&nbsp</div>
-        <div class="moreright">&nbsp</div>
-        <div class="scrollleft"><a class="left-button" href="#" data-original-title="" title="">&lt;</a></div>
-        <div class="scrollright"><a class="right-button" href="#" data-original-title="" title="">&gt;</a></div>    
-    </article>
-    <article id="pages" class="container"></article>
-    <footer></footer>
-    <script src="js/index.js" type="module"></script>
+
+	<div id="content-wrapper">
+		
+
+		<div class="column">
+			<img id=featured src="./img/HONEY COMB PROTOTYPE.PNG" alt="honeycomb-prototype">
+
+			<div id="slide-wrapper" >
+				<img id="slideLeft" class="arrow" src="./img/arrow-left.png" alt="arrow-left">
+
+				<div id="slider" overflow-y: auto tabindex="0">
+					<img class="thumbnail active" src="./img/HONEY COMB PROTOTYPE.PNG" alt="honeycomb-prototype">
+					<img class="thumbnail" src="./img/Sketch honeycomb.PNG" alt="Sketch">
+					<img class="thumbnail" src="./img/Honeycomb demonstrate.PNG" alt="demonstration">
+
+		
+				</div>
+
+				<img id="slideRight" class="arrow" src="./img/arrow-right.png" alt="arrow-right"> 
+			</div>
+		</div>
+
+		<div class="column">
+			<h1>The Honeycomb Shelter</h1>
+			<hr>
+			<h2>My angle</h2>
+
+			<p>This project is for our Maker lab class 1 where my team and I were required to design something that would be able to address a social issue of our community. Knowing that winter was approaching, we decided that it would be best to work on a shelter that is portable, transportable, and durable to withstand harsh weather conditions for people who are experiencing homelessness. We are not required to construct a physical prototype due to covid restrictions and so our project will be aided by digital prototyped and sketching. Though this concept may be difficult for us to create in-person with our limited access to the needed materials we are hoping that the freedom to design digitally will allow us the opportunity to proceed.
+        . Our concept incorporates the idea of the DIY culture which includes the shared act of construction, joint conversation, and reflection. (Ratto 253) We were inspired by an origami, so the shelter can be easy to pop up and collapse, as well as allowing it to be portable. It was important to keep in mind that the making of this product has to be shareable and accessible so no one is excluded in being able to set up our shelter (Davies 90). </p>
+
+        <p>sources:</p>
+        <p>
+        Ratto, Matt. “Critical Making: Conceptual and Material Studies in Technology and Social Life.” The Information Society, vol. 27, no. 4, Informa UK Limited, July 2011, pp. 252–60, doi:10.1080/01972243.2011.583819.</p>
+      </p>
+
+      <p>Davies, Sarah R. Hackerspaces : Making the Maker Movement . Polity, 2018.</p>
+
+			
+    </div>
+    
+    <script type="text/javascript">
+      let thumbnails = document.getElementsByClassName('thumbnail')
+  
+      let activeImages = document.getElementsByClassName('active')
+  
+      for (var i=0; i < thumbnails.length; i++){
+  
+        thumbnails[i].addEventListener('mouseover', function(){
+          console.log(activeImages)
+          
+          if (activeImages.length > 0){
+            activeImages[0].classList.remove('active')
+          }
+          
+  
+          this.classList.add('active')
+          document.getElementById('featured').src = this.src
+        })
+      }
+  
+  
+      let buttonRight = document.getElementById('slideRight');
+      let buttonLeft = document.getElementById('slideLeft');
+  
+      buttonLeft.addEventListener('click', function(){
+        document.getElementById('slider').scrollLeft -= 180
+      })
+  
+      buttonRight.addEventListener('click', function(){
+        document.getElementById('slider').scrollLeft += 180
+      })
+    </script>
+  
+
+	</div>
+
+      <!--==================== End My angle and projects area==================-->
+
+
+
+      <!--==================== Start contact form area ========================-->
+<head>
+  <div class="contact-me" id="contact-me"></div>
+  <form id="contact-form" action="https://morning-dawn-71905.herokuapp.com/send/" method="POST">
+	<title>Lets get in touch!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Lets get in touch!</h2>
+				<input type="text" class="field" placeholder="Your Name" required>
+				<input type="text" class="field" placeholder="Your Email" required>
+				<input type="text" class="field" placeholder="Phone">
+				<textarea placeholder="Message" class="field" required></textarea>
+        <button class="btn">Send</button>
+      </form>
+			</div>
+		</div>
+  </div>
+</div>
+  </body>
 </body>
+
+      <!--==================== Start contact form area ========================-->
+
+      <!-- ====================== Start Main Area =========================-->
+      </main>
+
+      
+
+
+<!-- Jquery js file -->
+
+<script src="./JS/jquery.3.4.1.js"></script>
+
+    <!-- Bootstrap js file-->
+    <script src="./JS/bootstrap.min.js"></script>
+    
+</body>
+</html>
