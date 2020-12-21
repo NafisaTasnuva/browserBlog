@@ -163,6 +163,7 @@
 
 			
     </div>
+      
     
     <script type="text/javascript">
       let thumbnails = document.getElementsByClassName('thumbnail')
@@ -196,11 +197,113 @@
         document.getElementById('slider').scrollLeft += 180
       })
     </script>
+
+
+  
+
   
 
 	</div>
 
       <!--==================== End My angle and projects area==================-->
+
+      <!--===================== Start my angle and project area 2===============-->
+
+      
+
+      <head>
+        <div class="my-angle" id="my-angle" ></div>
+    <title>Slider</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="content-wrapper">
+  
+
+  <div class="column">
+    <img id=featured src="./img/bengal tiger tattoos.png" alt="bengal-tiger">
+
+    <div id="slide-wrapper" >
+     
+
+      <div id="slider" overflow-y: auto tabindex="0">
+        
+        
+      
+
+  
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="column">
+    <h1>The Bengal tigers</h1>
+    <hr>
+    <h2>My angle</h2>
+
+    <p>This is a personal project illustrated by me. I used an online drawing software called paint tool sai and a Wacom drawing tablet to produce this image. The reason I drew this is to produce a personal piece for myself and remind myself of my home. A bengal tiger is the national animal of my home country which is Bangladesh. I was inspired by traditional black and white tattoo art style because I have an interest in tattoo designs. As an artist, I believe it is important to 
+      explore different mediums and styles of art to keep your skills sharp. I enjoy trying out new techniques and styles and this has been a personal project that I hold close to my heart. 
+    </p>
+
+
+    
+  </div>
+    
+  
+  <script type="text/javascript">
+    let thumbnails = document.getElementsByClassName('thumbnail')
+
+    let activeImages = document.getElementsByClassName('active')
+
+    for (var i=0; i < thumbnails.length; i++){
+
+      thumbnails[i].addEventListener('mouseover', function(){
+        console.log(activeImages)
+        
+        if (activeImages.length > 0){
+          activeImages[0].classList.remove('active')
+        }
+        
+
+        this.classList.add('active')
+        document.getElementById('featured').src = this.src
+      })
+    }
+
+
+    let buttonRight = document.getElementById('slideRight');
+    let buttonLeft = document.getElementById('slideLeft');
+
+    buttonLeft.addEventListener('click', function(){
+      document.getElementById('slider').scrollLeft -= 180
+    })
+
+    buttonRight.addEventListener('click', function(){
+      document.getElementById('slider').scrollLeft += 180
+    })
+  </script>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+      <!--===================== Start my angle and project area 2===============-->
 
 
 
